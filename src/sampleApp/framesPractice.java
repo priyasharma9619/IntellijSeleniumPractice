@@ -31,7 +31,7 @@ public class framesPractice {
         js.executeScript("window.scrollBy(0,2050)","");
         js.executeScript("arguments[0].scrollIntoView(true);","");
 
-//--------------------nested frames--------------------------------------
+//--------------------nested frames--------------------------------------------------/
         driver.switchTo().frame(driver.findElement(By.id("frm3")));
         driver.switchTo().frame(driver.findElement(By.id("frm2")));
         WebElement element = driver.findElement(By.name("fName"));
