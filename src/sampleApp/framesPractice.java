@@ -17,19 +17,19 @@ public class framesPractice {
         driver.get("https://www.hyrtutorials.com/p/frames-practice.html");
         driver.manage().window().maximize();
         Thread.sleep(2000);
-
-//        driver.switchTo().frame(driver.findElement(By.id("frm1")));
-//        Select sc = new Select(driver.findElement(By.id("selectnav2")));
-//        sc.selectByVisibleText("Home");
-//        Thread.sleep(2000);
-//        driver.switchTo().defaultContent();
-//        WebElement name = driver.findElement(By.id("name"));
-//        name.sendKeys("Hello world");
-//        Thread.sleep(2000);
-//        int size = driver.findElements(By.tagName("iframe")).size();
-//        System.out.println("Size:-"+size);
-//        js.executeScript("window.scrollBy(0,2050)","");
-//        js.executeScript("arguments[0].scrollIntoView(true);",example);
+//--------------------------single frame------------------------------------------
+        driver.switchTo().frame(driver.findElement(By.id("frm1")));
+        Select sc = new Select(driver.findElement(By.id("selectnav2")));
+        sc.selectByVisibleText("Home");
+        Thread.sleep(2000);
+        driver.switchTo().defaultContent();
+        WebElement name = driver.findElement(By.id("name"));
+        name.sendKeys("Hello world");
+        Thread.sleep(2000);
+        int size = driver.findElements(By.tagName("iframe")).size();
+        System.out.println("Size:-"+size);
+        js.executeScript("window.scrollBy(0,2050)","");
+        js.executeScript("arguments[0].scrollIntoView(true);","");
 
 //--------------------nested frames--------------------------------------
         driver.switchTo().frame(driver.findElement(By.id("frm3")));
