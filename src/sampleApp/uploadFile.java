@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class uploadFile {
     public static void main(String[] args) throws InterruptedException {
-        //fie uploaded
         WebDriver driver = HelloWorld.setChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.w3schools.com/howto/howto_html_file_upload_button.asp");
