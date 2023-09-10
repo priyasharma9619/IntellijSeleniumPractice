@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class HelloWorld {
 
-    static WebDriver setChromeDriver(){
+    public static WebDriver setChromeDriver(){
         System.setProperty("webdriver.chrome.driver","C:\\Users\\priya.sharma\\Downloads\\chromedriver.exe");
         return new ChromeDriver();
     }
